@@ -1,0 +1,308 @@
+/* General Styling */
+.hero__subtitle img {
+  width: 2.3rem;
+  height: 2.2rem;
+}
+
+.hero__content h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: var(--heading-color);
+}
+
+.hero__content h1 .highlight {
+  color: var(--secondary-color);
+}
+
+.hero__content p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+.hero__img-box img,
+.hero__img-box video {
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  border: 1px solid var(--secondary-color);
+  object-fit: cover;
+}
+
+.hero__content {
+  padding: 3.5rem;
+}
+
+.hero__img-box {
+  padding-top: 2rem;
+}
+
+/* Tabs Styles */
+.tabs {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.tab {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.tab.active {
+  background-color: #0056b3;
+  color: white;
+}
+
+.tab:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Booking Form Styles */
+.booking-form {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.booking-form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Form Groups */
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.radio-group label {
+  margin-right: 10px;
+}
+
+.radio-group input[type="radio"]:checked {
+  background-color: #007bff;
+}
+
+.search-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Horizontal Form Layout */
+.horizontal-form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.horizontal-form-group > div {
+  flex: 1;
+}
+
+/* Date Picker Input */
+/*input.date-picker {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Dropdown for Select Input */
+.dropdown {
+  position: relative;
+}
+
+.dropdown input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Train Class Dropdown */
+.train-class-input {
+  position: relative;
+}
+
+.train-class-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.train-class-options div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.train-class-input:hover .train-class-options {
+  display: block;
+}
+
+/* Styling for tabs */
+.tabs {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.tab {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.tab.active {
+  background-color: #0056b3;
+  color: white;
+}
+
+.tab:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.search-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #0056b3;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #004494;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .form-group {
+    flex-direction: column;
+  }
+
+  .horizontal-form-group {
+    flex-direction: column;
+  }
+
+  .tab {
+    font-size: 0.9rem; /* Smaller tab font size on mobile */
+  }
+  
+
+  .search-btn {
+    font-size: 1rem; /* Adjust button font size for smaller screens */
+  }
+}
+
+/* Hotel Location Dropdown */
+.booking-form .dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.booking-form .dropdown input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.booking-form .dropdown-list {
+  position: absolute;
+  top: 100%; /* Position the dropdown directly below the input */
+  left: 0;
+  right: 0;
+  max-height: 200px; /* Limit the height of the dropdown */
+  overflow-y: auto; /* Add scroll if there are many options */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  visibility: hidden; /* Initially hide the dropdown */
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0s 0.3s; /* Smooth fade-in */
+}
+
+.booking-form .dropdown.open .dropdown-list {
+  visibility: visible; /* Make it visible when dropdown is open */
+  opacity: 1;
+  transition: opacity 0.3s ease; /* Smooth fade-in effect */
+}
+
+.booking-form .dropdown-item {
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.booking-form .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
