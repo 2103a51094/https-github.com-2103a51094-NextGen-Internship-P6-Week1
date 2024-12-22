@@ -1,0 +1,84 @@
+/* Explore Section */
+.explore__section {
+    padding: 60px 0;
+  }
+  
+  .explore__section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--heading-color); /* Black text color */
+    margin-bottom: 20px;
+  }
+  
+  .explore__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--heading-color); /* Black text */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--secondary-color); /* Underline effect */
+  }
+  
+  /* Featured Tours Section (you can reuse these styles as they match with gallery) */
+  .featured__tour-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  .featured__tour-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .featured__tour-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Pagination Styles */
+  .pagination span {
+    width: 2rem;
+    height: 2rem;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--secondary-color);
+    color: var(--heading-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  .active__page {
+    background-color: var(--secondary-color);
+    color: #fff !important;
+  }
+  
+  .pagination span:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+  }
+  
+  .pagination span + span {
+    margin-left: 10px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .explore__section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .pagination span {
+      width: 1.5rem;
+      height: 1.5rem;
+      font-size: 0.9rem;
+    }
+  }
+  
